@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Suarez Fragrance | {{ perfume.nombre }}</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="logo">
+    <span>Suarez</span>Fragrance
+</div>
+
+
+    <ul>
+
+        <li>
+            <a href="/">Inicio</a>
+        </li>
+
+        <li>
+            <a href="/catalogo">Catálogo</a>
+        </li>
+
+
+    </ul>
+
+</nav>
+
+
+
+
+<section class="detalle-producto">
+
+    <div class="fondo-dorado"></div>
+
+
+<div class="imagen-producto">
+
+<img src="{{ url_for('static', filename='img/' + perfume.imagen) }}">
+
+</div>
+
+
+
+
+<div class="info-producto">
+
+
+<h1>
+{{ perfume.nombre }}
+</h1>
+
+
+<h3>
+{{ perfume.marca }}
+</h3>
+
+
+
+<p class="descripcion">
+
+{{ perfume.descripcion }}
+
+</p>
+
+
+
+
+<h2>
+Presentaciones disponibles
+</h2>
+
+
+
+<div class="opciones">
+
+
+<div class="opcion-card">
+
+<h3>
+🧴 Perfume completo
+</h3>
+
+<p>
+Disponible bajo pedido
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="opcion-card">
+
+<h3>
+💧 Decants
+</h3>
+
+<p>
+5 ml — {{ perfume.decant_5 }}
+</p>
+
+<p>
+10 ml — {{ perfume.decant_10 }}
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<a href="https://instagram.com/suarez_fragrance.tdv" target="_blank">
+
+    <button class="btn-consultar">
+    Solicitar información
+    </button>
+
+</a>
+
+
+</div>
+    <div class="fondo-dorado-2"></div>
+
+</section>
+
+
+
+</body>
+
+</html>

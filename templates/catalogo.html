@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>AromaStore | Catálogo</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="logo">
+    <span>Suarez</span>Fragrance
+</div>
+
+
+    <ul>
+
+        <li>
+            <a href="/">Inicio</a>
+        </li>
+
+        <li>
+    <a href="/catalogo">Catálogo</a>
+       </li>
+
+
+    </ul>
+
+
+</nav>
+
+
+
+
+<section class="catalogo-header">
+
+
+    <h1>
+        Nuestra colección
+    </h1>
+
+
+    <p>
+        Fragancias originales seleccionadas para cada estilo,
+        momento y personalidad.
+    </p>
+
+
+</section>
+
+
+
+
+
+<div class="filtros">
+
+    <button id="btnTodos">Todos</button>
+
+    <button id="btnArabes">Árabes</button>
+
+    <button id="btnDisenador">Diseñador</button>
+
+</div>
+
+
+
+
+<section id="arabes">
+
+<h2>Perfumes Árabes</h2>
+
+<div class="productos">
+
+{% for clave, perfume in perfumes.items() %}
+
+{% if perfume.categoria == "arabe" %}
+
+<a href="/producto/{{ clave }}">
+
+<div class="producto">
+
+<img src="{{ url_for('static', filename='img/' + perfume.imagen) }}">
+
+<h3>{{ perfume.nombre }}</h3>
+
+<p>{{ perfume.marca }}</p>
+
+<p class="descripcion">
+{{ perfume.descripcion }}
+</p>
+
+<span class="precio">
+{{ perfume.precio }}
+</span>
+
+<span class="ver-producto">
+    Ver perfume →
+</span>
+
+</div>
+
+</a>
+
+{% endif %}
+
+{% endfor %}
+
+</div>
+
+</section>
+
+
+<section id="disenador">
+
+<h2>Perfumes Diseñador</h2>
+
+<div class="productos">
+
+{% for clave, perfume in perfumes.items() %}
+
+{% if perfume.categoria == "disenador" %}
+
+<a href="/producto/{{ clave }}">
+
+<div class="producto">
+
+<img src="{{ url_for('static', filename='img/' + perfume.imagen) }}">
+
+<h3>{{ perfume.nombre }}</h3>
+
+<p>{{ perfume.marca }}</p>
+
+<p class="descripcion">
+{{ perfume.descripcion }}
+</p>
+
+<span class="precio">
+{{ perfume.precio }}
+</span>
+
+<span class="ver-producto">
+    Ver perfume →
+</span>
+
+</div>
+
+</a>
+
+{% endif %}
+
+{% endfor %}
+
+</div>
+
+</section>
+
+<script src="{{ url_for('static', filename='js/catalogo.js') }}"></script>
+</body>
+
+</html>

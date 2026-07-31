@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Suarez Fragrance | Perfumes & Decants Premium</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+    <div class="logo">
+    Suarez <span>Fragrance</span>
+</div>
+
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li>
+    <a href="/catalogo">Catálogo</a>
+</li>
+            
+        </ul>
+
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+       <h1>
+    Perfumes Originales<br>
+    & Decants Premium
+</h1>
+
+        <p>
+            Descubre fragancias árabes y de diseñador seleccionadas
+            para cada ocasión.
+        </p>
+
+        <a href="/catalogo">
+
+            <button>
+                Explorar catálogo
+            </button>
+
+        </a>
+
+    </div>
+
+
+    <div class="hero-logo">
+
+        <img src="{{ url_for('static', filename='img/logo.jpeg') }}" alt="Suarez Fragrance">
+
+    </div>
+
+</section>
+
+
+<section class="categorias">
+
+    <h2>Nuestras categorías</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🐪 Árabes</h3>
+            <p>
+                Fragancias intensas, dulces y de gran duración.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>👔 Diseñador</h3>
+            <p>
+                Perfumes reconocidos de las mejores casas.
+            </p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="destacados">
+
+<h2>Perfumes destacados</h2>
+
+<div class="productos">
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/khamrah-qahwa.jpeg') }}">
+
+        <h3>Khamrah Qahwa</h3>
+
+        <p>Lattafa</p>
+
+        <p class="descripcion">
+            Fragancia dulce con café, especias y vainilla.
+        </p>
+
+        <span class="precio">
+            $900 MXN
+        </span>
+
+    </div>
+
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/swy-intensely.jpeg') }}">
+
+        <h3>Stronger With You Intensely</h3>
+
+        <p>Emporio Armani</p>
+
+        <p class="descripcion">
+            Dulce, elegante y perfecta para noches frías.
+        </p>
+
+        <span class="precio">
+            $2,600 MXN
+        </span>
+
+    </div>
+
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/the-most-wanted.jpeg') }}">
+
+        <h3>The Most Wanted</h3>
+
+        <p>Azzaro</p>
+
+        <p class="descripcion">
+            Aroma intenso, dulce y masculino.
+        </p>
+
+        <span class="precio">
+            $1,500 MXN
+        </span>
+
+    </div>
+
+
+
+</div>
+
+</div>
+
+<section class="catalogo">
+
+   
+
+
+</section>
+
+
+</section>
+
+
+</body>
+
+</html>
