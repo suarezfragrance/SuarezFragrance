@@ -53,11 +53,22 @@ perfumes = {
         "marca": "Lattafa",
         "imagen": "khamrah-qahwa.jpeg",
         "descripcion": "Fragancia dulce con café, especias y vainilla.",
-        "precio": "$900 MXN",
+        "precio": " $800 MXN",
         "decant_5": "$70 MXN",
         "decant_10": "$120 MXN",
         "categoria": "arabe"
     },
+
+    "yara-tous": {
+    "nombre": "Lattafa Yara Tous Women EDP",
+    "marca": "Lattafa",
+    "imagen": "yara-tous.jpeg",
+    "descripcion": "Una fragancia femenina dulce, tropical y cremosa con un toque elegante y sofisticado.",
+    "precio": "$650 MXN",
+    "decant_5": "$55 MXN",
+    "decant_10": "$100 MXN",
+    "categoria": "arabes"
+},
 
 
    
