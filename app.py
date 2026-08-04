@@ -67,7 +67,7 @@ perfumes = {
     "precio": "$650 MXN",
     "decant_5": "$55 MXN",
     "decant_10": "$100 MXN",
-    "categoria": "arabes"
+    "categoria": "arabe"
 },
 
 
