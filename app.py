@@ -68,7 +68,19 @@ perfumes = {
     "decant_5": "$55 MXN",
     "decant_10": "$100 MXN",
     "categoria": "arabe"
+    },
+
+    "lattafa-eclaire": {
+    "nombre": "Lattafa Eclaire EDP",
+    "marca": "Lattafa",
+    "imagen": "lattafa-eclaire.jpeg",
+    "descripcion": "Una fragancia femenina dulce y cremosa con notas gourmand de vainilla, caramelo y leche, elegante y reconfortante.",
+    "precio": "$700 MXN",
+    "decant_5": "$60 MXN",
+    "decant_10": "$110 MXN",
+    "categoria": "arabe"
 },
+
 
 
    
