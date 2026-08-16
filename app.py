@@ -147,7 +147,7 @@ perfumes = {
     "precio": "Botella completa bajo pedido",
     "decant_5": "$80 MXN",
     "decant_10": "$150 MXN",
-    "categoria": "diseñador"
+    "categoria": "disenador"
 },
 
 "lacoste-l1212-noir": {
@@ -158,7 +158,7 @@ perfumes = {
     "precio": "Botella completa bajo pedido",
     "decant_5": "$80 MXN",
     "decant_10": "$150 MXN",
-    "categoria": "diseñador"
+    "categoria": "disenador"
 },
 
 
